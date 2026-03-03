@@ -71,7 +71,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn text-white bg-gradient-to-r from-indigo-500 to-purple-500">
+        <a className="btn text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">
           + New Ticket
         </a>
       </div>

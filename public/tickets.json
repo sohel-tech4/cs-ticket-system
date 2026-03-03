@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login Issue",
+    "description": "User unable to login with correct credentials.",
+    "customer": "Rahim Uddin",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-01T09:15:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Payment Failed",
+    "description": "Transaction failed but money deducted from account.",
+    "customer": "Karim Ahmed",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-01T11:30:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Password Reset",
+    "description": "Customer requested password reset link.",
+    "customer": "Nusrat Jahan",
+    "priority": "Medium",
+    "status": "Closed",
+    "createdAt": "2026-03-02T08:45:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Website Slow",
+    "description": "Website loading very slowly on mobile devices.",
+    "customer": "Sabbir Hossain",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-02T10:10:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Order Not Delivered",
+    "description": "Customer has not received the order after 7 days.",
+    "customer": "Fatema Khatun",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-02T13:25:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Profile Update Error",
+    "description": "Error message appears when updating profile information.",
+    "customer": "Tanvir Hasan",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-02T15:40:00Z"
+  },
+  {
+    "id": 7,
+    "title": "App Crash",
+    "description": "Mobile app crashes on startup.",
+    "customer": "Mim Akter",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-03T07:20:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Email Notification Not Received",
+    "description": "Customer not receiving order confirmation emails.",
+    "customer": "Rashed Khan",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-03T09:55:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Refund Request",
+    "description": "Customer requesting refund for damaged product.",
+    "customer": "Sumaiya Islam",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-03T12:15:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Account Suspension",
+    "description": "Customer account suspended without notice.",
+    "customer": "Jahidul Islam",
+    "priority": "Medium",
+    "status": "Closed",
+    "createdAt": "2026-03-03T14:05:00Z"
+  },
+  {
+    "id": 11,
+    "title": "Search Not Working",
+    "description": "Search functionality returns no results.",
+    "customer": "Arif Mahmud",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-03T16:30:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Incorrect Invoice",
+    "description": "Invoice shows incorrect billing amount.",
+    "customer": "Sharmin Akter",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-04T08:00:00Z"
+  },
+  {
+    "id": 13,
+    "title": "Feature Request",
+    "description": "Customer suggested adding dark mode feature.",
+    "customer": "Mehedi Hasan",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-04T09:10:00Z"
+  },
+  {
+    "id": 14,
+    "title": "Two-Factor Authentication Issue",
+    "description": "OTP not received during login process.",
+    "customer": "Tania Sultana",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-04T10:25:00Z"
+  },
+  {
+    "id": 15,
+    "title": "Data Sync Problem",
+    "description": "Data not syncing between web and mobile app.",
+    "customer": "Imran Hossain",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-04T11:45:00Z"
+  }
+]
