@@ -3,6 +3,7 @@ import Tickets from "./Tickets";
 import ProgressCard from "./ProgressCard";
 import CompleteCard from "./CompleteCard";
 import { toast } from "react-toastify";
+import Banner from "../Banner/Banner";
 
 const TicketsPromise = fetch("../../../public/tickets.json").then((res) =>
   res.json(),
@@ -18,9 +19,12 @@ const Mainsection = () => {
     if(!exist){
          const PreviosTicket = [...inProgressTicket, Ticket];
     setInProgressTicket(PreviosTicket);
+    toast("Ticket Added in Task", {
+      position: "top-center"
+    })
     }
     else{
-       toast("Alread have this", {
+       toast("Already have this", {
       position: "top-center"
     })
     }
@@ -37,8 +41,10 @@ const Mainsection = () => {
   }
 
   return (
-    <div className="container mx-auto mb-5 md:flex gap-5">
-      <div className="md:w-2/3">
+    <div className="container mx-auto mb-5">
+      <Banner inProgressTicket={inProgressTicket.length} completeTicket={completeTicket.length}></Banner>
+      <div className="md:flex gap-5">
+      <div className="">
         <h1 className="text-2xl font-semibold">Customer Tickets</h1>
         <Suspense
           fallback={
@@ -80,15 +86,17 @@ const Mainsection = () => {
           :
           (
             completeTicket.map((completeTicket) => (
-              <CompleteCard
+              <CompleteCard 
                 completeTicket={completeTicket}
                 key={completeTicket.id}
+                inProgressTicket={inProgressTicket}
               ></CompleteCard>
             ))
           )}
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

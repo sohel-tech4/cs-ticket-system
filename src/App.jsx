@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Banner></Banner>
       <Mainsection></Mainsection>
       <Footer></Footer>
       <div className='grid text-center items-center'>
