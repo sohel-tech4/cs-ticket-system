@@ -5,7 +5,7 @@ import CompleteCard from "./CompleteCard";
 import { toast } from "react-toastify";
 import Banner from "../Banner/Banner";
 
-const TicketsPromise = fetch("../../../public/tickets.json").then((res) =>
+const TicketsPromise = fetch("/tickets.json").then((res) =>
   res.json(),
 );
 // .then(data => console.log(data))

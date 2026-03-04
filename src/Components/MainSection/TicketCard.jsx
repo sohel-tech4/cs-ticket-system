@@ -10,7 +10,7 @@ const TicketCard = ({ Ticket, handleTicket }) => {
     <button onClick={() => handleTicket(Ticket)}>
       <div className="p-5 shadow-lg rounded-lg">
         <div className="flex justify-between">
-          <h1 className="font-bold text-xl">{title}</h1>
+          <h1 className="font-bold text-xl text-left">{title}</h1>
           <p
             className={`${status == "Open" ? "bg-[#B9F8CF]" : "bg-[#F8F3B9]"} py-2 px-3 rounded-xl font-bold`}
           >
@@ -18,7 +18,7 @@ const TicketCard = ({ Ticket, handleTicket }) => {
               className={`${status == "Open" ? "text-[#02A53B]" : "text-[#FEBB0C]"}`}
             >
               <FontAwesomeIcon icon={faCircle} />
-            </span>{" "}
+            </span>{""}
             {status}
           </p>
         </div>
