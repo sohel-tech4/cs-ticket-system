@@ -2,6 +2,7 @@ import { Suspense, useState } from "react";
 import Tickets from "./Tickets";
 import ProgressCard from "./ProgressCard";
 import CompleteCard from "./CompleteCard";
+import { toast } from "react-toastify";
 
 const TicketsPromise = fetch("../../../public/tickets.json").then((res) =>
   res.json(),
@@ -13,8 +14,16 @@ const Mainsection = () => {
   const [completeTicket, setCompleteTicket] = useState([]);
 
   const handleTicket = (Ticket) => {
-    const PreviosTicket = [...inProgressTicket, Ticket];
+    const exist = inProgressTicket.find(T => T.id === Ticket.id)
+    if(!exist){
+         const PreviosTicket = [...inProgressTicket, Ticket];
     setInProgressTicket(PreviosTicket);
+    }
+    else{
+       toast("Alread have this", {
+      position: "top-center"
+    })
+    }
   };
 
   const handleComplete = (ProgressTicket) =>{
@@ -22,6 +31,9 @@ const Mainsection = () => {
     setInProgressTicket(updatedProgress)
         const PreviosCompleteTikcket = [...completeTicket, ProgressTicket];
     setCompleteTicket(PreviosCompleteTikcket);
+    toast("Wow Task Completed", {
+      position: "top-center"
+    })
   }
 
   return (
@@ -44,7 +56,7 @@ const Mainsection = () => {
       <div className="mt-5 p-3">
         <div className="mb-5">
           <h1 className="text-2xl mb-5 font-semibold">Task Status</h1>
-          <div className="w-lg">
+          <div className="md:w-lg ">
             {inProgressTicket.length == 0 ? (
             <p className="text-lg">Select a ticket to add to Task Status</p>
           ) 
@@ -59,9 +71,9 @@ const Mainsection = () => {
           )}
           </div>
         </div>
-        <div>
+        <div className="">
           <h1 className="text-2xl mb-5 font-semibold">Resolved Task</h1>
-          <div className="w-lg">
+          <div className="md:w-lg">
             {completeTicket.length == 0 ? (
             <p className="text-lg">No resolved tasks yet.</p>
           ) 
